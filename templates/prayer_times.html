@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Namoz Vaqtlari</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #2980b9;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Namoz Vaqtlari – {{ date }}</h1>
+
+    <table>
+        <tr>
+            <th>Namoz</th>
+            <th>Vaqti</th>
+        </tr>
+        <tr><td>Bomdod</td><td>{{ Bomdod }}</td></tr>
+
+        <tr><td>Peshin</td><td>{{ Peshin }}</td></tr>
+        <tr><td>Asr</td><td>{{ Asr }}</td></tr>
+
+        <tr><td>Shom</td><td>{{ Shom }}</td></tr>
+        <tr><td>Xufton</td><td>{{ Xufton }}</td></tr>
+    </table>
+</body>
+</html>
